@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?> 
 <jnlp codebase="http://bt-thud.sourceforge.net/" href="Thud.jnlp"> 
    <information> 
-       <title>Thud - BattleTechMUX HUD</title> 
-	   <vendor>The Thud Team</vendor> 
+       <title>ThudNG2 - BattleTech MUX HUD</title> 
+	   <vendor>Mek City</vendor> 
        <offline-allowed/> 
    </information> 
    <security> 
