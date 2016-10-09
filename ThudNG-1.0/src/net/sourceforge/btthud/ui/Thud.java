@@ -780,11 +780,11 @@ public class Thud extends JFrame implements Runnable {
 			}
 		};
 
-		taThudNGWiki = new ThudSimpleAction ("Goto ThudNG Wiki") {
+		taThudNGWiki = new ThudSimpleAction ("Goto ThudNG2 Forum") {
 			protected void doAction () {
 				try
 				{
-					Browser.bringUpURL(new URI ("https://sourceforge.net/apps/mediawiki/thudng/index.php?title=Main_Page"));
+					Browser.bringUpURL(new URI ("https://mekcity.com/index.php/forum/thudng2"));
 				}
 				catch (Exception ex)
 				{
@@ -793,11 +793,11 @@ public class Thud extends JFrame implements Runnable {
 			}
 		};
 		
-		taDownload = new ThudSimpleAction ("Goto ThudNG Download Page") {
+		taDownload = new ThudSimpleAction ("Goto ThudNG2 Download Page") {
 			protected void doAction () {
 				try
 				{
-					Browser.bringUpURL(new URI ("https://sourceforge.net/projects/thudng/"));
+					Browser.bringUpURL(new URI ("https://mekcity.com/index.php/downloads/category/16-thudng2"));
 				}
 				catch (Exception ex)
 				{
