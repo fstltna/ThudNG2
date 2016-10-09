@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="WINDOWS-1252" standalone="no"?>
+<jardesc>
+    <jar path="ThudNG-1.0/Thud.jar"/>
+    <options buildIfNeeded="true" compress="true" descriptionLocation="/ThudNG-1.0/ThudNG.jardesc" exportErrors="false" exportWarnings="true" includeDirectoryEntries="false" overwrite="false" saveDescription="true" storeRefactorings="false" useSourceFolders="false"/>
+    <storedRefactorings deprecationInfo="true" structuralOnly="false"/>
+    <selectedProjects/>
+    <manifest generateManifest="true" mainClassHandleIdentifier="=ThudNG-1.0/src&lt;net.sourceforge.btthud.ui{Thud.java[Thud" manifestLocation="" manifestVersion="1.0" reuseManifest="false" saveManifest="false" usesManifest="true">
+        <sealing sealJar="false">
+            <packagesToSeal/>
+            <packagesToUnSeal/>
+        </sealing>
+    </manifest>
+    <selectedElements exportClassFiles="true" exportJavaFiles="false" exportOutputFolder="false">
+        <folder path="/ThudNG-1.0/docs"/>
+        <folder path="/ThudNG-1.0/org"/>
+        <file path="/ThudNG-1.0/README"/>
+        <file path="/ThudNG-1.0/Thud.ReleaseNotes.txt"/>
+        <folder path="/ThudNG-1.0/media"/>
+        <folder path="/ThudNG-1.0/scripts"/>
+        <javaElement handleIdentifier="=ThudNG-1.0/src"/>
+        <file path="/ThudNG-1.0/CHANGES.RTF"/>
+        <folder path="/ThudNG-1.0/lib"/>
+    </selectedElements>
+</jardesc>
