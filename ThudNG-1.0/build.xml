@@ -58,6 +58,12 @@
     </target>
 
     <target name="package-smoosh" depends="package-common">
+   <!--
+    <taskdef name="jarbundler" 
+        classpath="/Users/fstltna/.ant/lib/jarbundler-core-3.3.0.jar"
+        classname="net.sourceforge.jarbundler.JarBundler" />
+   -->
+
         <jar destfile="Thud.jar" basedir="bin">
             <manifest>
                 <attribute name="Built-By" value="${user.name}" />
@@ -69,6 +75,21 @@
             </manifest>
             <zipfileset src="lib/js.jar" />
         </jar>
+<!--
+        <jarbundler
+            build="3.1.0"
+            bundleid="com.mekcity.thudng2"
+            copyright="(C) 2016 - Mek City"
+            icon="Icon512x512.png"
+            infostring="The Battletech MUX client ThudNG2"
+            shortname="ThudNG2"
+            signature="TNG2"
+            version="3.1.0"
+            dir="release"
+            name="ThudNG2"
+            mainclass="=ThudNG-1.0/src&lt;net.sourceforge.btthud.ui{Thud.java[Thud" 
+            jar="Thud.jar" />
+-->
     </target>
 
     <target name="package" depends="package-only,package-smoosh" />
