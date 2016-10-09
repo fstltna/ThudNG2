@@ -167,6 +167,7 @@ public class Thud extends JFrame implements Runnable {
 	private JMenu resourcesMenu;
 	private ThudAction taThudNGWiki;
 	private ThudAction taDownload;
+	private ThudAction taAddServ;
 	
 	protected Logger	myLogger;
 
@@ -542,6 +543,7 @@ public class Thud extends JFrame implements Runnable {
 		
 		resourcesMenu.add(taThudNGWiki);
 		resourcesMenu.add(taDownload);
+		resourcesMenu.add(taAddServ);
 		
 		// Disable the map menu until we're actually connected
 		resourcesMenu.setEnabled(true);
@@ -798,6 +800,20 @@ public class Thud extends JFrame implements Runnable {
 				try
 				{
 					Browser.bringUpURL(new URI ("https://mekcity.com/index.php/downloads/category/16-thudng2"));
+				}
+				catch (Exception ex)
+				{
+					
+				}
+
+			}
+		};
+		
+		taAddServ = new ThudSimpleAction ("Add Your Server To Our List") {
+			protected void doAction () {
+				try
+				{
+					Browser.bringUpURL(new URI ("https://mekcity.com/index.php/online-games"));
 				}
 				catch (Exception ex)
 				{
