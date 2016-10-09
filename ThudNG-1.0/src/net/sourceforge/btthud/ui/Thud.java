@@ -174,8 +174,8 @@ public class Thud extends JFrame implements Runnable {
 	private HotKeys     myHotKeys;
 	
 	protected int 	iVersion = 3;
-	protected int	iSubVersion = 0;
-	protected int	iNanoVersion = 17;
+	protected int	iSubVersion = 1;
+	protected int	iNanoVersion = 0;
 	
 	protected String sReplayFile;
 	
