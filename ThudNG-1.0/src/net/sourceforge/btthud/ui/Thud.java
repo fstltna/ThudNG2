@@ -582,7 +582,7 @@ public class Thud extends JFrame implements Runnable {
 	{
 		try
 		{
-			JOptionPane.showMessageDialog(this, "Note: You must restart ThudNG for these changes to take effect.");
+			JOptionPane.showMessageDialog(this, "Note: You must restart ThudNG2 for these changes to take effect.");
 		}
 		catch (Exception ex)
 		{
@@ -1724,7 +1724,7 @@ textPane.setRequestFocusEnabled(true);
             
             // Setup the connection
             conn = new MUReplayConnection(this, parse, sReplayFName);
-            this.setTitle("ThudNGReplay " + getVersion () + " - " + sReplayFName);
+            this.setTitle("ThudNG2Replay " + getVersion () + " - " + sReplayFName);
 
 	    // Setup the rest of the helper classes.
 	    tacMap = new MUTacticalMap (this, 0);
@@ -1800,7 +1800,7 @@ textPane.setRequestFocusEnabled(true);
 
             // Setup the connection
             conn = new MUConnection(host, this, parse);
-            this.setTitle("ThudNG " + getVersion () + " - " + host.getHost() + " " + host.getPort());
+            this.setTitle("ThudNG2 " + getVersion () + " - " + host.getHost() + " " + host.getPort());
 
            	myLogger.Log("startConnection: 006 :" + host.toString () + ":");
 
@@ -1919,7 +1919,7 @@ textPane.setRequestFocusEnabled(true);
             if (parse != null)
                 parse.messageLine("*** Disconnected ***");
             
-            this.setTitle("ThudNG " + getVersion ());
+            this.setTitle("ThudNG2 " + getVersion ());
 
             // Disable some menu stuff
             taStartStop.setEnabled(false);
