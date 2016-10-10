@@ -32,6 +32,22 @@
         <copy todir="bin/media">
             <fileset dir="media">
                 <include name="icon/icon.gif" />
+                <include name="icon/icon.ico" />
+                <include name="icon/icon.png" />
+                <include name="ThudChatCentric.txt" />
+                <include name="ThudMapCentric.txt" />
+            </fileset>
+        </copy>
+
+        <copy todir="docs">
+            <fileset dir="docs">
+                <include name="**" />
+            </fileset>
+        </copy>
+
+        <copy todir="lib">
+            <fileset dir="lib">
+                <include name="**" />
             </fileset>
         </copy>
 
@@ -57,13 +73,11 @@
         </jar>
     </target>
 
-    <target name="package-smoosh" depends="package-common">
-   <!--
     <taskdef name="jarbundler" 
         classpath="/Users/fstltna/.ant/lib/jarbundler-core-3.3.0.jar"
-        classname="net.sourceforge.jarbundler.JarBundler" />
-   -->
+        classname="com.ultramixer.jarbundler.JarBundler" />
 
+    <target name="package-smoosh" depends="package-common">
         <jar destfile="Thud.jar" basedir="bin">
             <manifest>
                 <attribute name="Built-By" value="${user.name}" />
@@ -75,13 +89,14 @@
             </manifest>
             <zipfileset src="lib/js.jar" />
         </jar>
-<!--
+    </target>
+
+    <target name="package-apple" depends="package-common">
         <jarbundler
             build="3.1.0"
             bundleid="com.mekcity.thudng2"
             copyright="(C) 2016 - Mek City"
             icon="Icon512x512.png"
-            infostring="The Battletech MUX client ThudNG2"
             shortname="ThudNG2"
             signature="TNG2"
             version="3.1.0"
@@ -89,10 +104,9 @@
             name="ThudNG2"
             mainclass="net.sourceforge.btthud.ui.Thud" 
             jar="Thud.jar" />
--->
     </target>
 
-    <target name="package" depends="package-only,package-smoosh" />
+    <target name="package" depends="package-only,package-smoosh,package-apple" />
 
     <target name="sign" depends="package">
         <input message="Enter key name (alias):" addproperty="sign.alias" defaultvalue="mykey" />
