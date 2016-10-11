@@ -39,15 +39,13 @@
             </fileset>
         </copy>
 
-        <copy todir="docs">
+        <copy todir="bin/docs">
             <fileset dir="docs">
-                <include name="**" />
             </fileset>
         </copy>
 
-        <copy todir="lib">
+        <copy todir="bin/lib">
             <fileset dir="lib">
-                <include name="**" />
             </fileset>
         </copy>
 
@@ -96,7 +94,7 @@
             build="3.1.0"
             bundleid="com.mekcity.thudng2"
             copyright="(C) 2016 - Mek City"
-            icon="Icon512x512.png"
+            icon="LargeIcon.icns"
             shortname="ThudNG2"
             signature="TNG2"
             version="3.1.0"
